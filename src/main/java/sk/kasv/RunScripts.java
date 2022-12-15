@@ -25,10 +25,14 @@ public class RunScripts {
     //Creating a reader objects
     Reader r1 = new BufferedReader(new FileReader("sql_scripts/script1.sql"));
     Reader r2 = new BufferedReader(new FileReader("sql_scripts/script2.sql"));
+    Reader r3 = new BufferedReader(new FileReader("sql_scripts/script3.sql"));
+    Reader r4 = new BufferedReader(new FileReader("sql_scripts/script4.sql"));
 
     //Running the scripts
     sr.runScript(r1);
     sr.runScript(r2);
+    sr.runScript(r3);
+    sr.runScript(r4);
     System.out.println("Scripts Executed......");
   }
 }
